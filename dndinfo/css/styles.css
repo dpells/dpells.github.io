@@ -1,0 +1,60 @@
+
+body{
+	background-image:  url('../images/xanathar.jpg');
+	background-color: #271217;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*background-position: right top;
+	background-position: -597px 0px;*/
+	background-position: right -235px top 0;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+div{
+	margin: 10px
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Germania One', cursive;
+	letter-spacing: 2px;
+}
+
+h1{
+	margin: 0;
+}
+
+header{
+	padding: 0.67em;
+	width: 70%;
+	color: #e7e8e1;
+	text-align: center;
+	background-color: #27121744;
+}
+
+section{
+	background-color: #27121788;
+	color: #e7e8e1;
+	width: 70%;
+	padding: 10px;
+}
+
+section a {
+	color: #efff91;
+}
+
+section a:visited {
+	color: #eaff71;
+}
+
+section a:active{
+	color: #d9ff00;
+}
