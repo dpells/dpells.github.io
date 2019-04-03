@@ -1,0 +1,345 @@
+@font-face 
+{
+    font-family: 'junction_regularregular';
+    src: url('fonts/junctionregular_regular_macroman/Junction-webfont.eot');
+    src: url('fonts/junctionregular_regular_macroman/Junction-webfont.eot?iefix') format('eot'),
+         url('fonts/junctionregular_regular_macroman/Junction-webfont.woff') format('woff'),
+         url('fonts/junctionregular_regular_macroman/Junction-webfont.ttf') format('truetype'),
+         url('fonts/junctionregular_regular_macroman/Junction-webfont.svg#junction_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+body, html
+{
+	font-family: 'junction_regularregular', Ariel, sans-serif;
+	color: #ffffff;
+	background-color: #070707;
+	min-width: 420px;
+	height: 100%;
+	width: 99.95%;
+	margin: 0;
+	padding: 0;
+}
+
+nav 
+{
+	width: 100%;
+	min-width: 420px;
+	position: fixed;
+	z-index: 1;
+}
+
+nav ul 
+{
+	background: #3d3d3d;
+	background: -webkit-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0d0d0d);
+	background: -moz-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0d0d0d);
+	background: -ms-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0d0d0d);
+	background: -o-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0d0d0d);
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+nav ul:after {
+	content: ""; 
+	clear: both; 
+	display: block;
+}
+
+nav ul li  
+{
+	float: left;
+	display: block; 
+	line-height: 60px;
+	width: 120px;
+	text-align: center;
+}
+
+nav ul li:hover 
+{
+	cursor: pointer;
+	background-color: #0d0d0d;
+}
+
+nav ul li:hover a 
+{
+	color: #fff;
+}
+
+nav ul li:hover > ul 
+{
+	display: block;
+}
+
+nav ul li.about:hover 
+{
+	display: block;
+	background-color: #3d3d3d;
+	background: -webkit-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0066ff);
+	background: -moz-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0066ff);
+	background: -ms-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0066ff);
+	background: -o-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0066ff);
+	text-decoration: none;
+}
+
+nav ul li.projects:hover 
+{
+	display: block;
+	background-color: #3d3d3d;
+	background: -webkit-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #cc00cc);
+	background: -moz-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #cc00cc);
+	background: -ms-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #cc00cc);
+	background: -o-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #cc00cc);
+	text-decoration: none;
+}
+
+nav ul li.navlogo:hover 
+{
+	display: block;
+	background: #3d3d3d;
+	background: -webkit-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0d0d0d);
+	background: -moz-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0d0d0d);
+	background: -ms-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0d0d0d);
+	background: -o-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #0d0d0d);
+	text-decoration: none;
+}
+
+nav ul li.contact:hover 
+{
+	display: block;
+	background-color: #3d3d3d;
+	background: -webkit-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #dc4d38);
+	background: -moz-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #dc4d38);
+	background: -ms-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #dc4d38);
+	background: -o-linear-gradient(top, #3d3d3d, #3d3d3d 65%, #3d3d3d 66%, #dc4d38);
+	text-decoration: none;
+}
+	
+nav ul ul 
+{
+	display: none;
+	background: #3d3d3d; 
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+	z-index: 1;
+}
+
+nav ul ul li 
+{
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a; 
+	position: relative;
+	padding: 0;
+}
+nav ul ul li:hover 
+{
+	cursor: pointer;
+	background-color: #0d0d0d;
+}
+
+nav ul ul li:hover > ul 
+{
+	display: block;
+}	
+nav ul ul li a 
+{
+	display: block;
+}
+	
+nav ul ul ul 
+{
+	position: absolute; 
+	left: 100%; 
+	top: 0;
+}
+
+nav ul ul ul:hover
+{
+	display:block;
+}
+
+table
+{
+	margin: auto;
+}
+
+tr
+{
+	height: 60px;
+}
+
+td
+{
+	background-color: rgba(0,0,0,0.5);
+	vertical-align: middle;
+	text-align: center;
+	
+	border: 5px solid rgba(63,63,63,1);
+	border-radius: 12px;
+	
+	margin: 2px;
+
+	width: 150px;
+}
+
+.a
+{
+	color:#90D9FF;
+}
+
+.button
+{
+	display:block;
+	width:37px;
+	height:37px;
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	background-color:rgba(63,63,63,1);
+	background-image: url(../images/arrow.png);
+}
+
+.button:hover
+{
+	background-color: #494949;
+	cursor: pointer;
+}
+
+.copyright
+{
+	font-size: x-small;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	
+	opacity:0.5;	
+	text-align: center;
+	
+	position: absolute;
+	bottom: 1%;
+}
+
+.done
+{
+	text-decoration: line-through;
+}
+
+.heading
+{
+	font-size: 1.17em;
+	font-weight: bold;
+	margin-bottom: 1em;
+	margin-top: 0;
+}
+
+.logo
+{
+	margin: -12px auto;
+}
+
+.maybe
+{
+	opacity: 0.75;
+}
+
+.verymaybe
+{
+	opacity: .5;
+}
+
+.navlogo
+{
+	width: 90px;
+}
+
+.slide
+{
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	min-width: 420px;
+	min-height: 500px;
+	position: relative;
+	box-shadow: inset 0px 10px 10px rgba(63,63,63,1);
+}
+
+.slideno
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 50px;
+	font-weight: bold;
+	opacity: 0.5;
+}
+
+.socialmedia
+{
+	display: block;
+	width: 208px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 300px;
+}
+
+.text
+{
+	width: 99%;
+	
+	background: rgba(63,63,63,1);
+	
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	
+	border-radius: 5px;
+}
+
+.textmain
+{
+	height: 99%;
+	
+	margin-top: 100px;
+	
+	line-height: 1.25em;
+}
+
+.textpane
+{
+	height: 99%;
+}
+
+.texttable
+{	
+	margin: 80px auto;
+	
+	font-weight: bold;
+}
+
+.widget
+{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.wrapper
+{
+	width: 60%;
+	height: 25%;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 100px;
+}

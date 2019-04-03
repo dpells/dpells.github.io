@@ -1,12 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel="icon" href="images/logo_black.ico">
 		<title>David Pellegrini</title>
+		<!-- icon fonts -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="css/styles.css"> -->
+		<style>
+		  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Merienda:700');
+
+		  html, body{
+			background: #E2E2E2;  /* light grey */
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			color: #282828; /* dark grey */
+			margin: 0 auto;
+			background-image: url(images/Background66.png);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: 50%;
+			background-size: cover;
+			min-width: 327px;
+		  }
+
+		  section,
+		  footer {
+			padding: 50px 0;
+		  }
+
+		  header {
+			font-family: 'Merienda', sans-serif;
+			font-size: 18px;
+			padding-top: 12vh;
+			text-align: center;
+			height: 100vh;
+			text-shadow: 0px 0px 3px #E2E2E2;
+			text-transform: none;
+		  }
+
+		  header h1{
+			text-transform: none;
+			font-size: 68px;
+		  }
+
+		  header h2{
+			line-height: 45px;
+			font-size: 32px;
+		  }
+
+		  a{
+			color: #000;
+			text-decoration: none;
+		  }
+
+		  a:hover{
+			text-decoration: underline;
+		  }
+
+		  h1{
+			font-size: 32px;
+		  }
+
+		  h1, h3{
+			text-transform: uppercase;
+			font-weight: 400;
+		  }
+		  
+		  h4{
+			font-size: 20px;
+			font-weight: 400;
+		  }
+		  
+		  h5{
+			font-size: 18px;
+		  }
+		  
+		  h6{
+			font-size: 16px;
+		  }
+		  
+		  ul{
+			list-style-type: none;
+			padding: 0;
+			line-height: 1.5em;
+		  }
+
+		  /*
+		   Classes
+		  */
+		  .content-wrap {
+			max-width: 67%;
+			width: 90%;
+			margin: 0 auto;
+		  }
+
+		  .columns {
+			float: none;
+			width: 100%;
+			margin-bottom: 25px;
+			border-bottom: 1px solid #E2E2E2;
+			padding-bottom: 10px;
+		  }      
+		  
+		  @media only screen and (min-width: 900px){
+			.columns-m {
+			  float: left;
+			  width: 33%;
+			  border-bottom: 0px;
+			  padding-bottom: 0px;
+			}
+		  }
+		  
+		  .item {
+			margin-bottom: 50px;
+			border-bottom: 1px solid #5686c1;
+			padding-bottom: 20px;
+		  }
+		  
+		  .item:last-of-type, .noLine {
+			border-bottom: 0px;
+			padding-bottom: 0px;
+		  }
+
+		  .item h2 {
+			font-family: 'Merienda', sans-serif;
+		  }
+
+		  .download {
+			position: fixed;
+			top: 0;
+			right: 0;
+			background: rgba(6, 16, 27, 0.8);
+			color: #E2E2E2;
+			padding: 20px;
+		  }
+
+		  .fa {
+			font-size: 12px;
+			margin-right: 5px;
+		  }
+		  
+		  .profile {
+			background: rgba(6, 16, 27, 0.8);
+			color:#E2E2E2;
+			height: 100%;
+			overflow: hidden;
+		  }
+		  
+		  .profile img{
+			border-radius: 50%;
+			min-width: 251px;
+			display: block;
+			margin: auto;
+		  }      
+		  .profile a{
+			color: #FFF;
+		  }
+		  
+		  @media only screen and (min-width: 1500px) {
+			.profile-m {
+			  background: rgba(6, 16, 27, 0.8);
+			  color:#E2E2E2;
+			  height: 100%;
+			  overflow: hidden;
+			}
+			
+			.profile-m img{
+			  border-radius: 50%;
+			  float: left;
+			  margin-right: 3%;
+			}
+			.summary-m{
+			  width: 72%;
+			  float:right;
+			}
+		  }
+		  
+		  .work {
+			background: #E2E2E2;
+		  }
+		  
+		  .skills {
+			background: linear-gradient( rgba(20, 16, 31, 0.9), rgba(20, 16, 31, 0.6) ),
+			  url(images/Middle.png) no-repeat fixed;
+			background-position: right; 
+			background-size: cover;
+			color: #E2E2E2; /* super light grey */
+			font-size: 22px;
+			min-height: 50vh;
+		  }
+
+		  .social .fa{
+			background-color: #E2E2E2;
+			font-size: 18px;
+			display: inline-block;
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			border-radius: 50%;
+			margin: 0 10px;
+			color: #282828;
+			text-align: center;
+		  }
+
+		  .education {
+			background: #E2E2E2;
+			clear: left;
+		  }
+		  .contact {
+			background: /*linear-gradient( rgba(77, 92, 113, 0.5), rgba(77, 92, 113, 0.25) ),*/ url(images/Bottom.png) no-repeat fixed 50%;
+			background-size: cover;
+			color: #E2E2E2; /* super light grey */
+			text-align: center;
+		  }
+
+		  .contact a{
+			color: #FFF;
+		  }
+
+		  /*
+		   IDs
+		  */
+
+		</style>
 	</head>
-
 	<body>
-		Hi! You've found my website. Unfortunately the server that once held a full website has died. Please bear with me while I find the time to try to pull the files from it
-	</body>
+	<!-- 	<a class="download" href="resume.pdf" download>Download resume (pdf)</a> -->
+  
+		<!-- HEADER -->
+		<header id="header">
+				<h1>David Pellegrini</h1>
+				<h2>MSC Candidate<br>Game Designer</h2>
+		</header>
+		
+		<!-- ABOUT ME / PROFILE -->
+		<section class="profile profile-m" id="header">
+			<div class="content-wrap">
+				<img src="images/headshot.jpeg" alt="David Pellegrini" height="25%" width="25%">
 
+				<div class="summary-m">
+					<h1>Hello World!</h1>
+					<p>Although the definition of a geek could have my picture beside it, I believe I bring a lot more to the table.</p>
+					<p>I love challenging myself both physically and mentally. I am constantly pushing boundaries competing in a Tough Mudder competition, trying to bench press more than the guy next to me - pretty bad ass I know - but I also was a 2nd place finisher in databases at CS Games 2015, am an avid fan of Batman and Marvel, and enjoy passing the time with a variety of video games.</p>
+					<p>You know that question that you get asked sometimes, the "​what gets you up in the morning?"​ Well the sarcastic part of me wants to say my alarm clock but really its my love for computer science. I love coding. I love learning about it and I love teaching what i already know. The look on a persons face when they finally got it, that is why I want to teach, I want to be the reason why a student falls in love with computer science.</p>
+					<p>I am very passionate about what I do and I want to share that passion with others. I want to teach kids that computers are much more than just Facebook, Twitter and Instagram. I want them to see what's underneath because that's a lesson we should all know, don't judge a person on the surface until you see what's underneath.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- WORK EXPERIENCE -->
+		<section class="work">
+			<div class="content-wrap">
+				<h1>Work Experience</h1>
+        
+				<div class="item">
+					<div class="details">
+						<h2>Canada Learning Code</h2>
+						<h3>Communications Lead, Sudbury ON</h3>
+						<p class="date">November 2018 - Present</p>
+					</div>
+
+					<div class="description">
+						<ul>
+						  <li><i class="fa fa-plus"></i>Plan regional trips for the Sudbury Code Mobile throughout Northeastern Ontario </li>
+						  <li><i class="fa fa-plus"></i>Chase and develop leads for community partners in diverse, rural, and remote communities</li>
+						  <li><i class="fa fa-plus"></i>Serve as the main point of contact for each event partner and ensure flawless execution</li>
+						  <li><i class="fa fa-plus"></i>Capture events and trip activities in photographs and videos</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+        
+				<div class="item">
+					<div class="details">
+						<h2>Laurentian University</h2>
+						<h3>Graduate Teaching Assistant</h3>
+						<p class="date">September 2016 - April 2018</p>
+					</div>
+
+					<div class="description">
+						<ul>
+						  <li><i class="fa fa-plus"></i>Design and oversee seven teaching labs</li>
+						  <li><i class="fa fa-plus"></i>Responsible for creating and marking tests for 160 students</li>
+						  <li><i class="fa fa-plus"></i>Supervise and assist with marking student assignments</li>
+						  <li><i class="fa fa-plus"></i>Moderate an experimental gamification system for university courses</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+
+				<div class="item">
+					<div class="details">
+						<h2>Northern Ontario School of Medicine</h2>
+						<h3>Research Assistant</h3>
+						<p class="date">June 2014 - April 2018</p>
+					</div>
+
+					<div class="description">
+						<ul>
+						  <li><i class="fa fa-plus"></i>Research the efficacy of video-conference as a means of addiction treatment by managing a database of over 20,000 patient records and treatment history</li>
+						  <li><i class="fa fa-plus"></i>Collaborate with community health care providers studying injection drug use</li>
+						  <li><i class="fa fa-plus"></i>Work with Masters-level students studying addiction trends</li>
+						  <li><i class="fa fa-plus"></i>Assist other researchers with in-house data analysis in a wide variety of disciplines</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+
+				<div class="item">
+					<div class="details">
+						<h2>Laurentian University</h2>
+						<h3>Teaching Assistant</h3>
+						<p class="date">September 2015 - December 2015</p>
+					</div>
+
+					<div class="description">
+						<ul>
+							<li><i class="fa fa-plus"></i></i>Responsible for marking undergraduate assessments and evaluations</li>
+							<li><i class="fa fa-plus"></i></i>Developed computer programming classes using the Python language</li>
+							<li><i class="fa fa-plus"></i></i>Participating and presenting a seminar presentation about computer programming in the classroom  for the 2016 OAME conference</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+
+				<div class="item">
+					<div class="details">
+						<h2>Moores Clothing for Men</h2>
+						<h3>Wardrobe Consultant</h3>
+						<p class="date">April 2013 - June 2014</p>
+					</div>
+
+					<div class="description">
+						<ul>
+						  <li><i class="fa fa-plus"></i></i>Created a warm and welcoming environment for customers to shop</li>
+						  <li><i class="fa fa-plus"></i></i>Provided advice and opinions for customer purchases</li>
+						  <li><i class="fa fa-plus"></i></i>Assisted co-workers with sales, offering second opinions</li>
+						  <li><i class="fa fa-plus"></i></i>Supported tuxedo rental department, measuring and fitting customers</li>
+						  <li><i class="fa fa-plus"></i></i>Maintained store cleanliness</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+
+				<div class="item">
+					<div class="details">
+						<h2>Laurentian University</h2>
+						<h3>Lab Advisor - Computer Science</h3>
+						<p class="date">September 2012 - April 2013</p>
+					</div>
+
+					<div class="description">
+						<ul>
+						  <li><i class="fa fa-plus"></i></i>Provided one on one assistance for students working on assignments</li>
+						</ul>
+
+					</div>
+				</div><!-- close .item -->
+			</div><!-- close content-wrap -->
+		</section>
+
+
+		<!-- SKILLS -->
+		<section class="skills skills-m">
+			<div class="content-wrap">
+				<h1>Skills</h1>
+
+				<div class="skills-list">
+					<div class="columns columns-m">
+						<h3>Best at:</h3>
+						<ul>
+              <li><i class="fa fa-chevron-right"></i>Java</li>
+							<li><i class="fa fa-chevron-right"></i>HTML5 / CSS3</li>
+              <li><i class="fa fa-chevron-right"></i>MySQL / MS SQL</li>
+              <li><i class="fa fa-chevron-right"></i>Python</li>
+						</ul>
+					</div>
+
+					<div class="columns columns-m">
+						<h3>Worked with:</h3>
+						<ul>
+              <li><i class="fa fa-chevron-right"></i>Android</li>
+              <li><i class="fa fa-chevron-right"></i>C / C++</li>
+							<li><i class="fa fa-chevron-right"></i>C#</li>
+							<li><i class="fa fa-chevron-right"></i>PHP</li>
+						</ul>
+					</div>
+
+					<div class="columns columns-m noLine">
+						<h3>Learning:</h3>
+						<ul>
+							<li><i class="fa fa-chevron-right"></i>Flutter</li>
+							<li><i class="fa fa-chevron-right"></i>Javascript</li>
+              <li><i class="fa fa-chevron-right"></i>Node.js</li>
+							<li><i class="fa fa-chevron-right"></i>PWAs</li>
+						</ul>
+					</div>
+				</div><!-- close .skills-list -->
+        
+        <!-- FUTURE HOME OF PROJECTS && PUBLICATIONS -->
+        <!-- FUTURE HOME OF AWARDS -->
+			</div>
+		</section>
+
+
+		<!-- EDUCATION -->
+		<section class="education">
+			<div class="content-wrap">
+				<h1>Education</h1>
+
+				<div class="item">
+					<h2>Laurentian University, 2018</h2>
+					<h3>Masters of Science - Computational Science</h3>
+				</div>
+
+				<div class="item">
+					<h2>Laurentian University, 2016</h2>
+					<h3>Bachelor of Education - Junior / Intermediate Science</h3>
+          
+          <h4>Teaching Experience</h4>
+        
+        <div class="item noLine">
+					<div class="details">
+						<h5>Queen Elizabeth II School</h5>
+						<h6>Grade 10 (6 weeks)</h6>
+						<p class="date">Spring 2015</p>
+					</div>
+
+					<div class="description">
+            <ul>
+              <li><i class="fa fa-plus"></i></i>Planned and supervised a multi-class trip to ARC Climbing</li>
+              <li><i class="fa fa-plus"></i></i>Created engaging science  activities, implementing the Smarter Science framework</li>
+              <li><i class="fa fa-plus"></i></i>Co-created language units - Designed and implemented engaging lessons building comics to introduce media literacy</li>
+              <li><i class="fa fa-plus"></i></i>Actively participated in professional development activities related to learning strategies in the classroom</li>
+            </ul>
+					</div>
+				</div><!-- close .item -->
+        
+        <div class="item noLine">
+					<div class="details">
+						<h5>Lockerby Composite School</h5>
+						<h6>Grade 10 (6 weeks)</h6>
+						<p class="date">Fall 2015</p>
+					</div>
+
+					<div class="description">
+            <ul>
+              <li><i class="fa fa-plus"></i></i>Created engaging chemistry lab activities, implementing the Smarter Science framework</li>
+              <li><i class="fa fa-plus"></i></i>Co-created biology units - Designed and implemented hands-on lessons to introduce the new biology unit</li>
+              <li><i class="fa fa-plus"></i></i>Attended learning cycles meetings to enhance student engagement through critical inquiry and Google Apps for Education</li>
+              <li><i class="fa fa-plus"></i></i>Actively participated in professional development activities related to technology in the classroom</li>
+            </ul>
+					</div>
+				</div><!-- close .item -->
+        
+        <div class="item">
+					<div class="details">
+						<h5>Chemlsford Public School</h5>
+						<h6>Grade 5 / 6 (40 days)</h6>
+						<p class="date">Spring 2015</p>
+					</div>
+
+					<div class="description">
+            <ul>
+              <li><i class="fa fa-plus"></i></i>Developed and presented differentiated lessons applying to Earth and Space Systems</li>
+              <li><i class="fa fa-plus"></i></i>Co-taught math and language - Delivered engaging education, art, and drama lessons</li>
+              <li><i class="fa fa-plus"></i></i>Supervised a field trip to Algonquin Road Public School</li>
+              <li><i class="fa fa-plus"></i></i>Lead indoor intramural floor hockey tournament</li>
+            </ul>
+					</div>
+				</div><!-- close .item -->
+          
+				</div>
+
+				<div class="item">
+					<h2>Laurentian University, 2015</h2>
+					<h3>Bachelor of Computer Science - Specialization in Game Design</h3>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT INFO -->
+		<footer class="contact">
+			<div class="content-wrap">
+				<h1>Let's keep in touch!</h1>
+
+				<div class="social">
+					<a href="https://twitter.com/dpells02" title="Twitter"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/dpells02/" title="Instagram"><i class="fa fa-instagram"></i></a>
+					<a href="https://github.com/dpells" title="Github"><i class="fa fa-github-alt"></i></a>
+					<a href="https://ca.linkedin.com/in/davidpellegrini02" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+				</div>
+
+				<p><a href="mailto:dap@davidpellegrini.com">dap [at] davidpellegrini.com</a></p>
+				<p>Sudbury, ON</p>
+
+				<p class="copyright">Copyright &#169; 2017 by David Pellegrini</p>
+			</div>
+		</footer>
+	</body>
 </html>
