@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/dpells
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://davidpellegrini.ca
+  * I am dpells (https://keybase.io/dpells) on keybase.
+  * I have a public key with fingerprint 1DF1 7734 4D18 3CB0 0CFA  04ED 1B0D 5BBF F381 5CE3
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b05c0d6a20689478f6a5725cf91853c278a3e1107fdd0761a5f7b7bde61fd2660a",
+      "fingerprint": "1df177344d183cb00cfa04ed1b0d5bbff3815ce3",
+      "host": "keybase.io",
+      "key_id": "1b0d5bbff3815ce3",
+      "kid": "0101b4092276387f7f2dcf6245b077cd99292f2060fd360f9c17c4cb531750a12ce00a",
+      "uid": "d36ba5c6e46a0842dcafd695cf25f019",
+      "username": "dpells"
+    },
+    "service": {
+      "hostname": "davidpellegrini.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1568120470,
+  "expire_in": 157680000,
+  "prev": "72a5b9e19c04c3afd819ca5e7b27b0eb9e277351ddd101db843d584a6ce9901e",
+  "seqno": 31,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMNyAnicbVJrTFRHGAVaIZBSsTx+FMT2tqWlPDpz33dLSCuxSgtaUYsouL2PuXBx
+2V13lwVEoEZiU5S4hEiRh7YNFdRIgtBqiEaRgg8eEmzSByDhDa2pCQ+F0ErnkvKv
+8+PO3PnOOXO+M/OT7wtuPu7Bvvtvzh1NHXPvaqvJdkvLOVuRT0gWJY8w5BMH0eqE
+TAqyO4wHNYUwEACSQAKMDBRWJAHLCzTHq6zIcCQjqwLkGUomOV6kEISAUxUFcCwU
+GZWTOElBLFQVkmWBSEQSqmZORzarTTM7sCxUVMhxFE0rkKdkCQBZFQGNFCgBhZEk
+VaV4yMiIwsQMi11nYHOSaEfRmgXv4R/jqr3/wa/5BlCigUCSHEvxnMqppCKrLEkz
+EuA4WREEUiBV3BFQFQp/BBlyMi1LDAU5BoiQlBFY9Z29KocxksjILKJZEfA01hJV
+hRVwBiSjAijoQDuymcUspKOtyGSyEwWRBN5zajLSY9X7WKuLTm0Vg9JxHlq0rB9k
+tVkcFtliwvUMh8NqN+h8R55VJ+QgyfiflFHSzArOEjOcyGbXLGbCADFSdmi6NmRY
+Hl8ZzYFIAuVaNRsyajqC4Vge4KGfg5xYkiNFRhIQFGRAyxTuhsdLkUGcRHISQLhE
+4gtioKIoOEpF4mlKYXhaZGUkCAAiQm/ukNlCGCiIfYrpWNOupZtFR7YNEQW321Jf
+dHP3cfNc56E/Mjcfb7+1p2fdsX7F2tHhPZjTkeL6/OfhC5k3+we5YeP7y/frvzpe
+/DQo/EH4b3OtFXUo/5laOJd+ua3breba/JmgkdlZz8ZdXt0tmeNVZ5mHqV/cjZ/+
+PXw6oGlbQtjQx41l+1xpCTGDl7pkV3Nue7hpsDJ1qTew3A43OkcHxdi+zuQ9T9jU
+dcNPnj7acupSQUfE4ukQ64BpMerbisbyPsO5yp75iripDvPAeHP9L9tvP7B4xZYY
+i4KKgl37rN+VxoT9FWvJ1T74RgtOrD19a1dixUk4k7LQ8Mo7psdHksiLbXMDs/eu
+Nnvx9Xv84hZvFaUVRlRnTy3FaztDdvaMOw8vRGzdvTx0/tjzkckDG7jjP/TUtScu
+vcdTxZ6BjZmbTxz4euZPddJ7PrQ6Y+LL7JeWlkemuz2+73x8KCwq73BJUGhU6aZN
+b9Um+8f2hV4x/FHlavh0u/2z0dGkBtpYO5M35Nq/0XWssqzQ5gqtub75zbKTMZMp
+vvcnApovts51D/z4+vPQ0EcBwO65EplYLLc4u4Vkr1eTnc3RV2qqQgYqlfZ07Y31
+z/bGeVylyK7GetOEf+CRlvmCf7J8asfiOxMe9h4dg71dJ9JMSU0x57L33jjzoX9/
+lV+lY2v1cmPftGNhd1OyV91l/3uf3Nlw/U5N+cCNaW7F59cdH5W+fPda/dTfp7Zk
+8Qn9FypKJPbdyvOer73d+i8HsNGG
+=6wQ7
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dpells
+
+==================================================================
